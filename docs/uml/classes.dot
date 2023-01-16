@@ -1,0 +1,41 @@
+digraph "classes" {
+charset="utf-8"
+rankdir=BT
+"0" [label="{Change|\l|}", shape="record"];
+"1" [label="{DataKey|\l|values_list(cls)\l}", shape="record"];
+"2" [label="{Dice|end_face\lend_face : int\lrolls_made : int\lstart_face : int\l|get_rolls_made()\lreset_rolls_count()\lroll()\l}", shape="record"];
+"3" [label="{Difficulty|\l|}", shape="record"];
+"4" [label="{FileMode|\l|}", shape="record"];
+"5" [label="{FileOps|default_setting_dict : dict\l|dict_contains(a_dict, key_list)\lget_file_object(filename, mode)\lread_file_to_dict(file_object)\lwrite_dict_to_file(file_object, a_dict)\l}", shape="record"];
+"6" [label="{FirstMover|\l|}", shape="record"];
+"7" [label="{Highscore|FILE_NAME : str\l|get_dict()\lrevise_highscore(newname, newscore)\lset_dict(a_dict)\l}", shape="record"];
+"8" [label="{Intelligence|AVG : int\lHIGH_MAX : int\lLOW_MAX : int\lMID_MAX : int\lRATIO_LIMIT_HIGH : int\lRATIO_LIMIT_LOW : int\lRATIO_LIMIT_MID : int\ldifficulty\lend\lend : int\lodd_ratio : int\lstart\lstart : int\l|will_roll(score)\l}", shape="record"];
+"9" [label="{MainPresenter|current_player : NoneType\ldie\lfileops\lforce_exit : bool\lintel\lmainView\lplayer1\lplayer2\l|apply_single_player_setting()\lassign_first_mover(mover)\lget_current_player()\lget_highscore_dict()\lget_play_mode_and_diff()\lget_settings_dict()\linit_high_score_data()\linit_intelligence(flag)\llog_highscore(newname, newscore)\lmanage_turn()\lset_highscore_dict(a_dict)\lset_settings_dict(a_dict)\ltoggle_current_player()\lupdate_currentplayer(turnscore, turnrolls)\lupdate_player_name(playerId)\lupdate_setting(key, value)\l}", shape="record"];
+"10" [label="{MockMainViewImpl|count : int\l|print_roll_stats(player, turntotal, rollednum)\lwill_roll(current_turn_score)\l}", shape="record"];
+"11" [label="{PlayMode|\l|}", shape="record"];
+"12" [label="{Player|COMPUTER_NAME : str\lid\lm_is_computer\lname : str\lrolls_made : int\lscore : int\l|add_rolls_made(rolls_made)\ladd_score(score)\lget_id()\lget_name()\lget_rolls_made()\lget_score()\lis_computer()\lreset_stats()\lset_computer(value)\lset_name(name)\l}", shape="record"];
+"13" [label="{PlayerObj|\l|}", shape="record"];
+"14" [label="{TestDiceClass|\l|test__get_rolls_made()\ltest__init_default_object()\ltest__reset_rolls_count()\ltest__roll_a_dice()\ltest__set_end_face()\ltest__set_start_face()\l}", shape="record"];
+"15" [label="{TestEnumModule|\l|test_play_mode_enum_object()\l}", shape="record"];
+"16" [label="{TestFileOps|expected_dict : dict\lexpected_keys : list\lfileops\lvalues : list\l|setUp()\ltest__assert_test_setup()\ltest__dict_contains()\ltest__get_file_object__raises_type_error()\ltest__get_file_object__read_and_write()\ltest__get_file_object__read_returns_None()\ltest__is_file_object__bad_type()\ltest__is_file_object_and_dict__bad_type()\ltest__read_file_to_dict_success()\ltest__write_dict_to_file__in_write_mode()\ltest__write_dict_to_file__write_and_read()\l}", shape="record"];
+"17" [label="{TestHighscore|hs\ltest_dict : dict\l|setUp()\ltest__get_dict__set_dict()\ltest__revise_highscore__dict_changed()\ltest__revise_highscore__dict_unchanged()\ltest__sort_func()\ltest__tuplelist_to_numkeys_dict()\ltest_init_state()\ltest_vet_new_highscore()\l}", shape="record"];
+"18" [label="{TestIntelligence|\l|test__init()\ltest__random_play__high()\ltest__random_play__low()\ltest__random_play__mid()\ltest__will_roll_impl__high()\ltest__will_roll_impl__low()\ltest__will_roll_impl__mid()\l}", shape="record"];
+"19" [label="{TestMainPresenter|presenter\l|setUp()\ltest__apply_single_player_setting__False()\ltest__assign_first_mover__P1()\ltest__assign_first_mover__P2()\ltest__assign_first_mover__random()\ltest__manage_turn__ValueError()\ltest__manage_turn__play_till_no_roll()\ltest__manage_turn__stop_when_1_rolled()\ltest__parse_cheat_test_scores__keyword_with_params()\ltest__parse_cheat_test_scores__no_keyword_or_no_params()\ltest__toggle_current__betweenP1andP2()\ltest__toggle_current_player__NotImplementedError()\l}", shape="record"];
+"20" [label="{TestPlayerClass|a_player\l|setUp()\lsetUpClass(cls)\ltest__add_rolls_made()\ltest__add_score__correct_sum()\ltest__is_computer__is_default_false()\ltest__reset_stats()\ltest__set_is_computer__False()\ltest__set_is_computer__True()\ltest__set_name__equals__get_name()\ltest_init_default_object()\l}", shape="record"];
+"2" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="die", style="solid"];
+"5" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="fileops", style="solid"];
+"5" -> "16" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="fileops", style="solid"];
+"7" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="_highscore", style="solid"];
+"7" -> "17" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="hs", style="solid"];
+"8" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="intel", style="solid"];
+"9" -> "19" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="presenter", style="solid"];
+"12" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="current_player", style="solid"];
+"12" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="current_player", style="solid"];
+"12" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="current_player", style="solid"];
+"12" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="current_player", style="solid"];
+"12" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="current_player", style="solid"];
+"12" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="current_player", style="solid"];
+"12" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="player1", style="solid"];
+"12" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="player2", style="solid"];
+"12" -> "20" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="a_player", style="solid"];
+}

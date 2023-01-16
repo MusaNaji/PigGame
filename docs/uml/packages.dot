@@ -1,0 +1,43 @@
+digraph "packages" {
+charset="utf-8"
+rankdir=BT
+"0" [label="pig", shape="box"];
+"1" [label="pig.main", shape="box"];
+"2" [label="pig.main.dice", shape="box"];
+"3" [label="pig.main.enums_module", shape="box"];
+"4" [label="pig.main.fileops", shape="box"];
+"5" [label="pig.main.highscore", shape="box"];
+"6" [label="pig.main.intelligence", shape="box"];
+"7" [label="pig.main.mainpresenter", shape="box"];
+"8" [label="pig.main.player", shape="box"];
+"9" [label="pig.tests", shape="box"];
+"10" [label="pig.tests.dice_test", shape="box"];
+"11" [label="pig.tests.enums_module_test", shape="box"];
+"12" [label="pig.tests.fileops_test", shape="box"];
+"13" [label="pig.tests.highscore_test", shape="box"];
+"14" [label="pig.tests.intelligence_test", shape="box"];
+"15" [label="pig.tests.mainpresenter_test", shape="box"];
+"16" [label="pig.tests.player_test", shape="box"];
+"4" -> "3" [arrowhead="open", arrowtail="none"];
+"6" -> "3" [arrowhead="open", arrowtail="none"];
+"7" -> "2" [arrowhead="open", arrowtail="none"];
+"7" -> "3" [arrowhead="open", arrowtail="none"];
+"7" -> "4" [arrowhead="open", arrowtail="none"];
+"7" -> "5" [arrowhead="open", arrowtail="none"];
+"7" -> "6" [arrowhead="open", arrowtail="none"];
+"7" -> "8" [arrowhead="open", arrowtail="none"];
+"10" -> "1" [arrowhead="open", arrowtail="none"];
+"10" -> "2" [arrowhead="open", arrowtail="none"];
+"11" -> "1" [arrowhead="open", arrowtail="none"];
+"11" -> "3" [arrowhead="open", arrowtail="none"];
+"12" -> "3" [arrowhead="open", arrowtail="none"];
+"12" -> "4" [arrowhead="open", arrowtail="none"];
+"13" -> "5" [arrowhead="open", arrowtail="none"];
+"14" -> "3" [arrowhead="open", arrowtail="none"];
+"14" -> "6" [arrowhead="open", arrowtail="none"];
+"15" -> "3" [arrowhead="open", arrowtail="none"];
+"15" -> "4" [arrowhead="open", arrowtail="none"];
+"15" -> "7" [arrowhead="open", arrowtail="none"];
+"16" -> "3" [arrowhead="open", arrowtail="none"];
+"16" -> "8" [arrowhead="open", arrowtail="none"];
+}

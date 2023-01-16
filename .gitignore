@@ -1,0 +1,10 @@
+.coverage
+.venv/
+__pycache__
+htmlcov/
+*.pyc
+.flake8
+.pylintrc
+algorithm_*
+projected_*
+test_file*

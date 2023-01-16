@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module highscore</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>highscore</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cm4004%5Conedrive%5Cdesktop%5Cpig-env%5Cpig%5Cmain%5Chighscore.py">c:\users\m4004\onedrive\desktop\pig-env\pig\main\highscore.py</a></font></td></tr></table>
+    <p><tt>Contains:&nbsp;<a href="#Highscore">Highscore</a>&nbsp;class.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="highscore.html#Highscore">Highscore</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Highscore">class <strong>Highscore</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Interface&nbsp;a&nbsp;Dictionary&nbsp;<a href="builtins.html#object">object</a>&nbsp;with&nbsp;a&nbsp;list&nbsp;of&nbsp;Tuple.<br>
+&nbsp;<br>
+Dictionary&nbsp;require&nbsp;unique&nbsp;keys&nbsp;while&nbsp;values&nbsp;in&nbsp;a&nbsp;Tuple&nbsp;grouping&nbsp;may&nbsp;be<br>
+duplicated.<br>
+&nbsp;<br>
+Tuples&nbsp;are&nbsp;thus&nbsp;used&nbsp;to&nbsp;first&nbsp;generate&nbsp;an&nbsp;order&nbsp;list&nbsp;of&nbsp;highscores,&nbsp;from<br>
+high&nbsp;to&nbsp;low,&nbsp;slicing&nbsp;at&nbsp;a&nbsp;max&nbsp;length&nbsp;of&nbsp;5.&nbsp;Then,&nbsp;a&nbsp;dict()&nbsp;of&nbsp;integer&nbsp;keys<br>
+numbered&nbsp;1&nbsp;and&nbsp;upto&nbsp;5&nbsp;(inclusive),&nbsp;is&nbsp;used&nbsp;to&nbsp;represent&nbsp;the&nbsp;relative<br>
+position&nbsp;of&nbsp;each&nbsp;record&nbsp;on&nbsp;the&nbsp;leaderboard;&nbsp;and&nbsp;the&nbsp;dict()&nbsp;exposed&nbsp;as&nbsp;the<br>
+data&nbsp;structure.<br>
+&nbsp;<br>
+The&nbsp;values&nbsp;of&nbsp;the&nbsp;dict()&nbsp;are&nbsp;concatenatations&nbsp;of&nbsp;the&nbsp;player&nbsp;name&nbsp;and&nbsp;score,<br>
+e.g.&nbsp;Joe#123.&nbsp;The&nbsp;'#'&nbsp;is&nbsp;used&nbsp;as&nbsp;a&nbsp;delimiter,&nbsp;the&nbsp;first&nbsp;portion&nbsp;is&nbsp;treated<br>
+as&nbsp;string&nbsp;and&nbsp;the&nbsp;latter&nbsp;an&nbsp;int.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Highscore-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialise&nbsp;the&nbsp;dictionary.</tt></dd></dl>
+
+<dl><dt><a name="Highscore-get_dict"><strong>get_dict</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;dictionary,&nbsp;bound&nbsp;by&nbsp;reference.</tt></dd></dl>
+
+<dl><dt><a name="Highscore-revise_highscore"><strong>revise_highscore</strong></a>(self, newname, newscore)</dt><dd><tt>Write&nbsp;score&nbsp;and&nbsp;name&nbsp;into&nbsp;Top5&nbsp;leader&nbsp;board.<br>
+&nbsp;<br>
+...if&nbsp;score&nbsp;is&nbsp;&gt;=&nbsp;to&nbsp;any&nbsp;of&nbsp;the&nbsp;five&nbsp;slots&nbsp;available.</tt></dd></dl>
+
+<dl><dt><a name="Highscore-set_dict"><strong>set_dict</strong></a>(self, a_dict)</dt><dd><tt>Assign&nbsp;a_dict&nbsp;param&nbsp;to&nbsp;highscore&nbsp;dictinary.<br>
+&nbsp;<br>
+Enforce&nbsp;it&nbsp;is&nbsp;sorted&nbsp;in&nbsp;ascending&nbsp;order&nbsp;of&nbsp;keys,&nbsp;i.e.&nbsp;1&nbsp;-&nbsp;5.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>FILE_NAME</strong> = 'highscore.txt'</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

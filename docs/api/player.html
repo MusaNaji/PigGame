@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module player</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>player</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cm4004%5Conedrive%5Cdesktop%5Cpig-env%5Cpig%5Cmain%5Cplayer.py">c:\users\m4004\onedrive\desktop\pig-env\pig\main\player.py</a></font></td></tr></table>
+    <p><tt>Contains:&nbsp;<a href="#Player">Player</a>&nbsp;class.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="player.html#Player">Player</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Player">class <strong>Player</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Player">Player</a>(player_id)<br>
+&nbsp;<br>
+Holds&nbsp;player&nbsp;attributes:&nbsp;names,&nbsp;total&nbsp;score&nbsp;and&nbsp;total&nbsp;rolls_made.<br>
+&nbsp;<br>
+The&nbsp;constructor's&nbsp;player_id&nbsp;param&nbsp;is&nbsp;an&nbsp;Enum&nbsp;of&nbsp;type&nbsp;PlayerObj's,&nbsp;P1&nbsp;or&nbsp;P2,<br>
+from&nbsp;which&nbsp;a&nbsp;'Player1'&nbsp;or&nbsp;'Player2'&nbsp;name&nbsp;value&nbsp;is&nbsp;derived.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Player-__init__"><strong>__init__</strong></a>(self, player_id)</dt><dd><tt>Initialise&nbsp;values.</tt></dd></dl>
+
+<dl><dt><a name="Player-add_rolls_made"><strong>add_rolls_made</strong></a>(self, rolls_made)</dt><dd><tt>Add&nbsp;the&nbsp;current&nbsp;value&nbsp;of&nbsp;rolls&nbsp;to&nbsp;the&nbsp;attribute.</tt></dd></dl>
+
+<dl><dt><a name="Player-add_score"><strong>add_score</strong></a>(self, score)</dt><dd><tt>Add&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;parameter&nbsp;to&nbsp;score.</tt></dd></dl>
+
+<dl><dt><a name="Player-get_id"><strong>get_id</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;player&nbsp;id.</tt></dd></dl>
+
+<dl><dt><a name="Player-get_name"><strong>get_name</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;current&nbsp;name.</tt></dd></dl>
+
+<dl><dt><a name="Player-get_rolls_made"><strong>get_rolls_made</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;current&nbsp;rolls&nbsp;made.</tt></dd></dl>
+
+<dl><dt><a name="Player-get_score"><strong>get_score</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;current&nbsp;score.</tt></dd></dl>
+
+<dl><dt><a name="Player-is_computer"><strong>is_computer</strong></a>(self)</dt><dd><tt>Getter&nbsp;the&nbsp;current&nbsp;state&nbsp;of&nbsp;computer,&nbsp;true&nbsp;or&nbsp;false.</tt></dd></dl>
+
+<dl><dt><a name="Player-reset_stats"><strong>reset_stats</strong></a>(self)</dt><dd><tt>Resets&nbsp;the&nbsp;values&nbsp;of&nbsp;score&nbsp;and&nbsp;rolls&nbsp;made&nbsp;to&nbsp;0.</tt></dd></dl>
+
+<dl><dt><a name="Player-set_computer"><strong>set_computer</strong></a>(self, value)</dt><dd><tt>Assign&nbsp;the&nbsp;boolean,&nbsp;value,&nbsp;to&nbsp;is_computer_state.<br>
+&nbsp;<br>
+Set&nbsp;name&nbsp;to&nbsp;self.<strong>COMPUTER_NAME</strong>&nbsp;if&nbsp;value&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="Player-set_name"><strong>set_name</strong></a>(self, name)</dt><dd><tt>Assign&nbsp;name&nbsp;parameter&nbsp;to&nbsp;the&nbsp;instance&nbsp;attribute.<br>
+&nbsp;<br>
+Enforces&nbsp;name&nbsp;as&nbsp;'Computer'&nbsp;if&nbsp;the&nbsp;instances&nbsp;is_computer&nbsp;is&nbsp;True.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>COMPUTER_NAME</strong> = 'Computer'</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

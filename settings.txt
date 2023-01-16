@@ -1,0 +1,5 @@
+MODE:one
+DIFF:low
+MOVER:random
+P1:James
+P2:Anna

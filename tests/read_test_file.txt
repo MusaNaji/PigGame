@@ -1,0 +1,5 @@
+MODE:two
+DIFF:mid
+MOVER:random
+P1:Player1
+P2:Player2

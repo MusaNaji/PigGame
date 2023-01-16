@@ -1,0 +1,34 @@
+# PynSource Version 1.2
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin. Comments are saved.'}
+{'type':'umlshape', 'id':'Dice', 'x':78, 'y':422, 'width':146, 'height':234, 'attrs': 'end_face|rolls_made|start_face', 'meths': '__get_end_face|__get_start_face|__init__|__set_end_face|__set_start_face|get_rolls_made|reset_rolls_count|roll'}
+{'type':'umlshape', 'id':'PlayMode', 'x':50, 'y':13, 'width':98, 'height':80, 'attrs': 'ONE_PLAYER|TWO_PLAYERS', 'meths': ''}
+{'type':'umlshape', 'id':'Difficulty', 'x':21, 'y':198, 'width':110, 'height':96, 'attrs': 'HIGH|LOW|MID', 'meths': ''}
+{'type':'umlshape', 'id':'PlayerObj', 'x':10, 'y':106, 'width':100, 'height':80, 'attrs': 'P1|P2', 'meths': ''}
+{'type':'umlshape', 'id':'FirstMover', 'x':640, 'y':260, 'width':110, 'height':96, 'attrs': 'P1|P2|RAND', 'meths': ''}
+{'type':'umlshape', 'id':'FileMode', 'x':198, 'y':10, 'width':90, 'height':96, 'attrs': 'APPEND|READ|WRITE', 'meths': ''}
+{'type':'umlshape', 'id':'DataKey', 'x':336, 'y':3, 'width':98, 'height':154, 'attrs': 'DIFF|MODE|MOVER|P1|P2', 'meths': 'values_list'}
+{'type':'umlshape', 'id':'Change', 'x':644, 'y':90, 'width':98, 'height':128, 'attrs': 'DIFF|MODE|NAME|SINGLE_MODE|TWO_MODE', 'meths': ''}
+{'type':'umlshape', 'id':'Enum', 'x':217, 'y':178, 'width':50, 'height':28, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'FileOps', 'x':818, 'y':67, 'width':202, 'height':170, 'attrs': 'default_setting_dict', 'meths': '_is_file_object|_is_file_object_and_dict|dict_contains|get_file_object|read_file_to_dict|write_dict_to_file'}
+{'type':'umlshape', 'id':'Highscore', 'x':808, 'y':313, 'width':242, 'height':218, 'attrs': 'FILE_NAME|_highscores_dict', 'meths': '__init__|_get_name_and_score_tuplelist|_sort_func|_tuplelist_to_numkeys_dict|_vet_new_highscore|get_dict|revise_highscore|set_dict'}
+{'type':'umlshape', 'id':'Intelligence', 'x':799, 'y':859, 'width':210, 'height':346, 'attrs': 'AVG|HIGH_MAX|LOW_MAX|MID_MAX|RATIO_LIMIT_HIGH|RATIO_LIMIT_LOW|RATIO_LIMIT_MID|difficulty|end|odd_ratio|start', 'meths': '__init__|_get_willroll_test_limits|_random_play|_set_end|_set_start|_will_roll_impl|will_roll'}
+{'type':'umlshape', 'id':'MainPresenter', 'x':286, 'y':747, 'width':226, 'height':586, 'attrs': 'RULES|_highscore|_settings_dict|current_player|die|fileops|force_exit|intel|mainView|player1|player2', 'meths': '__init__|__set_end_face|__set_start_face|_get_player|_parse_cheat_test_scores|_set_player_score|apply_single_player_setting|assign_first_mover|get_current_player|get_highscore_dict|get_play_mode_and_diff|get_settings_dict|init_high_score_data|init_intelligence|log_highscore|manage_turn|set_highscore_dict|set_settings_dict|toggle_current_player|update_currentplayer|update_player_name|update_setting'}
+{'type':'umlshape', 'id':'Player', 'x':88, 'y':706, 'width':122, 'height':346, 'attrs': 'COMPUTER_NAME|id|m_is_computer|name|rolls_made|score', 'meths': '__init__|_set_score|add_rolls_made|add_score|get_id|get_name|get_rolls_made|get_score|is_computer|reset_stats|set_computer|set_name'}
+{'type':'umlshape', 'id':'MainShell', 'x':386, 'y':210, 'width':210, 'height':490, 'attrs': 'SETTINGS_FILE_NAME|abort_msg|fileops|has_settings_changed|in_game_mode|intro|presenter|prompt', 'meths': 'change_computer_difficulty|change_name|change_play_mode|default|do_exit|do_highscore|do_play|do_rules|do_settings|handle_turn|has_player_won|load_or_sync_settings|precmd|preloop|print_current_diff_and_mode|print_dictdata_toconsole|print_roll_stats|show_turn_prompt|will_roll'}
+{'type':'umlshape', 'id':'MainView', 'x':160, 'y':288, 'width':138, 'height':80, 'attrs': '', 'meths': 'print_roll_stats|will_roll'}
+{'type':'umlshape', 'id':'Interface', 'x':16, 'y':314, 'width':100, 'height':28, 'attrs': '', 'meths': ''}
+{'type':'edge', 'id':'PlayMode_to_Enum', 'source':'PlayMode', 'target':'Enum', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Change_to_Enum', 'source':'Change', 'target':'Enum', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'PlayerObj_to_Enum', 'source':'PlayerObj', 'target':'Enum', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'FileMode_to_Enum', 'source':'FileMode', 'target':'Enum', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'FirstMover_to_Enum', 'source':'FirstMover', 'target':'Enum', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Difficulty_to_Enum', 'source':'Difficulty', 'target':'Enum', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'DataKey_to_Enum', 'source':'DataKey', 'target':'Enum', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'FirstMover_to_MainPresenter', 'source':'FirstMover', 'target':'MainPresenter', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'FileOps_to_MainPresenter', 'source':'FileOps', 'target':'MainPresenter', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Dice_to_MainPresenter', 'source':'Dice', 'target':'MainPresenter', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Highscore_to_MainPresenter', 'source':'Highscore', 'target':'MainPresenter', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Intelligence_to_MainPresenter', 'source':'Intelligence', 'target':'MainPresenter', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'Player_to_MainPresenter', 'source':'Player', 'target':'MainPresenter', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'MainPresenter_to_MainShell', 'source':'MainPresenter', 'target':'MainShell', 'uml_edge_type': 'composition'}
+{'type':'edge', 'id':'MainView_to_Interface', 'source':'MainView', 'target':'Interface', 'uml_edge_type': 'generalisation'}

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module fileops</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>fileops</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cm4004%5Conedrive%5Cdesktop%5Cpig-env%5Cpig%5Cmain%5Cfileops.py">c:\users\m4004\onedrive\desktop\pig-env\pig\main\fileops.py</a></font></td></tr></table>
+    <p><tt>Contains:&nbsp;<a href="#FileOps">FileOps</a>&nbsp;class.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="fileops.html#FileOps">FileOps</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FileOps">class <strong>FileOps</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>An&nbsp;interface&nbsp;class&nbsp;between&nbsp;Dictionary&nbsp;and&nbsp;FileObjects.<br>
+&nbsp;<br>
+Dictionarys&nbsp;are&nbsp;used&nbsp;to&nbsp;register&nbsp;changes&nbsp;to&nbsp;data,&nbsp;so&nbsp;that,&nbsp;FileObjects&nbsp;are<br>
+only&nbsp;accessed&nbsp;when&nbsp;data&nbsp;has&nbsp;changed&nbsp;during&nbsp;the&nbsp;App's&nbsp;active&nbsp;cycle.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="FileOps-close_file_object"><strong>close_file_object</strong></a>(self, file_object)</dt><dd><tt>Close&nbsp;FileObject&nbsp;if&nbsp;it&nbsp;is&nbsp;still&nbsp;alive.</tt></dd></dl>
+
+<dl><dt><a name="FileOps-dict_contains"><strong>dict_contains</strong></a>(self, a_dict, key_list)</dt><dd><tt>Return&nbsp;true&nbsp;if&nbsp;dictionary&nbsp;contains&nbsp;all&nbsp;and&nbsp;only&nbsp;the&nbsp;keys&nbsp;in&nbsp;list.</tt></dd></dl>
+
+<dl><dt><a name="FileOps-get_file_object"><strong>get_file_object</strong></a>(self, filename, mode)</dt><dd><tt>Open&nbsp;a&nbsp;file&nbsp;for&nbsp;READ,&nbsp;WRITE&nbsp;or&nbsp;APPEND&nbsp;operation.<br>
+&nbsp;<br>
+It&nbsp;is&nbsp;imperative&nbsp;the&nbsp;caller&nbsp;calls&nbsp;close()&nbsp;on&nbsp;file_object&nbsp;after&nbsp;use.<br>
+@&nbsp;filename&nbsp;is&nbsp;the&nbsp;name&nbsp;or&nbsp;path&nbsp;of&nbsp;the&nbsp;file<br>
+@&nbsp;return&nbsp;a&nbsp;file_object&nbsp;for&nbsp;filename&nbsp;or&nbsp;None&nbsp;if&nbsp;it&nbsp;does&nbsp;not&nbsp;exist<br>
+@&nbsp;raises&nbsp;Exeception&nbsp;if&nbsp;other&nbsp;unhandled&nbsp;IO&nbsp;Error&nbsp;raised</tt></dd></dl>
+
+<dl><dt><a name="FileOps-read_file_to_dict"><strong>read_file_to_dict</strong></a>(self, file_object)</dt><dd><tt>Read&nbsp;content&nbsp;from&nbsp;file&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;dict,&nbsp;and&nbsp;return&nbsp;the&nbsp;dict.<br>
+&nbsp;<br>
+Auto-close&nbsp;file_object&nbsp;after&nbsp;use.<br>
+&nbsp;<br>
+Loads&nbsp;record,&nbsp;from&nbsp;file&nbsp;to&nbsp;dict&nbsp;with&nbsp;pass-by-ref,&nbsp;containing&nbsp;a<br>
+record&nbsp;of&nbsp;two&nbsp;values&nbsp;with&nbsp;':'&nbsp;as&nbsp;delimiter,&nbsp;e.g.&nbsp;score:name,&nbsp;the<br>
+first&nbsp;part,&nbsp;which&nbsp;is&nbsp;used&nbsp;as&nbsp;dictionary&nbsp;key&nbsp;needs&nbsp;to&nbsp;be&nbsp;unique.<br>
+@&nbsp;param&nbsp;file_object&nbsp;is&nbsp;the&nbsp;return&nbsp;value&nbsp;of&nbsp;open(a_filename,&nbsp;'r')<br>
+@&nbsp;return&nbsp;a&nbsp;Dictionary&nbsp;of&nbsp;the&nbsp;key&nbsp;value&nbsp;pair&nbsp;records&nbsp;of&nbsp;the&nbsp;file<br>
+@&nbsp;raises&nbsp;TypeError&nbsp;of&nbsp;file_object&nbsp;None&nbsp;or&nbsp;not&nbsp;type&nbsp;TextIOWrapper</tt></dd></dl>
+
+<dl><dt><a name="FileOps-write_dict_to_file"><strong>write_dict_to_file</strong></a>(self, file_object, a_dict)</dt><dd><tt>Write&nbsp;dict&nbsp;contents&nbsp;to&nbsp;file,&nbsp;and&nbsp;auto-close&nbsp;file_object&nbsp;after&nbsp;use.<br>
+&nbsp;<br>
+Used&nbsp;':'&nbsp;as&nbsp;delimiter,&nbsp;in&nbsp;the&nbsp;format&nbsp;'key:value'.<br>
+@&nbsp;param&nbsp;file_object&nbsp;is&nbsp;the&nbsp;return&nbsp;value&nbsp;of&nbsp;open(a_filename,&nbsp;'w')<br>
+&nbsp;&nbsp;or&nbsp;open(a_filename,&nbsp;'a')<br>
+@&nbsp;param&nbsp;a_dict&nbsp;is&nbsp;a&nbsp;Dictionary&nbsp;<a href="builtins.html#object">object</a><br>
+@&nbsp;return&nbsp;True&nbsp;if&nbsp;no&nbsp;error&nbsp;is&nbsp;encountered</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>default_setting_dict</strong> = {'DIFF': 'mid', 'MODE': 'two', 'MOVER': 'random', 'P1': 'Player1', 'P2': 'Player2'}</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
